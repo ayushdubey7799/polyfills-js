@@ -1,3 +1,5 @@
+// ==================MAP======================= //
+
 const arr = [1,2,3,4,5];
 console.log("Original Array => "+arr);
 let inbuiltMap = arr.map((item,index,array) => item*2);
@@ -16,7 +18,7 @@ Array.prototype.myMap = function(cb){
 let customMap = arr.myMap((item,index,array) => item*2);
 console.log("Polyfill map method used: Array => "+customMap);
 
-// ============================================== //
+// =============FILTER============================ //
 {
 const arr = [1,2,3,4,5];
 let inbuiltFilter = arr.filter((item,index,array) => item%2==0);
@@ -39,7 +41,7 @@ let customFilter = arr.myFilter((item,index,array) => item%2==0);
 console.log("Polyfill filter method used: Array => "+customFilter);
 
 }
-// ============================================== //
+// ===================REDUCE========================= //
 {
     const arr = [1,2,3,4,5];
     let inbuiltReduce= arr.reduce((acc,item,array) => acc+item);
